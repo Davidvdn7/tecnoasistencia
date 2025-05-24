@@ -1,28 +1,42 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Servicios técnicos y ventas de productos informáticos.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>TecnoAsistencia</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <style>
-    body { margin: 0; font-family: Arial, sans-serif; background-color: #f5f5f5; }
-    header, footer { background: #1e1e1e; color: white; text-align: center; padding: 20px; }
-    nav { background: #333; display: flex; justify-content: center; gap: 15px; padding: 10px; }
-    nav a { color: white; text-decoration: none; font-weight: bold; }
-    .container { padding: 20px; max-width: 1200px; margin: auto; }
-    section { margin-bottom: 40px; }
-    h2 { color: #222; }
-    .services, .products { display: flex; flex-wrap: wrap; gap: 20px; }
-    .card { background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 20px; flex: 1 1 calc(33% - 40px); }
-    .card img { max-width: 100%; height: auto; border-radius: 8px; }
-    form input, form textarea { width: 100%; padding: 10px; margin-top: 10px; margin-bottom: 20px; }
-    form button { padding: 10px 20px; background: #333; color: white; border: none; cursor: pointer; }
-    .faq, .testimonials { background: #fff; padding: 20px; border-radius: 8px; }
-    footer i { margin: 0 10px; }
-    @media (max-width: 768px) {
-      .card { flex: 1 1 100%; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background-color: #f0f0f0;
+    }
+    header, footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 1em;
+    }
+    nav {
+      background-color: #333;
+      padding: 1em;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 2em;
+      max-width: 1000px;
+      margin: auto;
+      background: white;
+      margin-bottom: 1em;
+    }
+    h2 {
+      color: #444;
     }
   </style>
 </head>
@@ -30,94 +44,72 @@
 
 <header>
   <h1>TecnoAsistencia</h1>
-  <p>Soluciones en tecnología a tu alcance</p>
+  <p>Servicios técnicos y ventas de productos informáticos</p>
 </header>
 
 <nav>
   <a href="#servicios">Servicios</a>
-  <a href="#ventas">Productos</a>
-  <a href="#faq">Preguntas Frecuentes</a>
+  <a href="#ventas">Ventas</a>
+  <a href="#faq">Preguntas</a>
   <a href="#testimonios">Testimonios</a>
   <a href="#contacto">Contacto</a>
 </nav>
 
-<div class="container">
-  <section id="servicios">
-    <h2>Servicios Técnicos</h2>
-    <div class="services">
-      <div class="card">
-        <img src="https://via.placeholder.com/300x200" alt="Reparación de computadoras">
-        <h3>Reparación de computadoras</h3>
-        <p>Diagnóstico y reparación de hardware y software.</p>
-      </div>
-      <div class="card">
-        <img src="https://via.placeholder.com/300x200" alt="Soporte técnico">
-        <h3>Soporte técnico</h3>
-        <p>Asistencia remota y presencial para todo tipo de equipos.</p>
-      </div>
-      <div class="card">
-        <img src="https://via.placeholder.com/300x200" alt="Instalación de software">
-        <h3>Instalación de software</h3>
-        <p>Instalación y configuración de programas y sistemas operativos.</p>
-      </div>
-    </div>
-  </section>
+<section id="bienvenida">
+  <h2>Bienvenido</h2>
+  <p>En TecnoAsistencia ofrecemos soluciones técnicas para tus equipos y los mejores productos informáticos del mercado.</p>
+</section>
 
-  <section id="ventas">
-    <h2>Productos Informáticos</h2>
-    <div class="products">
-      <div class="card">
-        <img src="https://via.placeholder.com/300x200" alt="Laptop HP">
-        <h3>Laptop HP 15"</h3>
-        <p>Intel i5, 8GB RAM, 256GB SSD<br><strong>Precio: 3.000.000 PYG</strong></p>
-      </div>
-      <div class="card">
-        <img src="https://via.placeholder.com/300x200" alt="Mouse Gamer">
-        <h3>Mouse Gamer RGB</h3>
-        <p>7 botones programables, iluminación RGB<br><strong>Precio: 150.000 PYG</strong></p>
-      </div>
-      <div class="card">
-        <img src="https://via.placeholder.com/300x200" alt="Monitor 24">
-        <h3>Monitor LED 24"</h3>
-        <p>Full HD, HDMI/VGA<br><strong>Precio: 850.000 PYG</strong></p>
-      </div>
-    </div>
-  </section>
+<section id="servicios">
+  <h2>Servicios Técnicos</h2>
+  <ul>
+    <li>Reparación de computadoras</li>
+    <li>Soporte técnico a domicilio y remoto</li>
+    <li>Instalación de software y sistemas</li>
+  </ul>
+  <p>¡Confía en nosotros para mantener tu equipo funcionando como nuevo!</p>
+</section>
 
-  <section id="faq">
-    <h2>Preguntas Frecuentes</h2>
-    <div class="faq">
-      <p><strong>¿Hacen reparaciones a domicilio?</strong><br>Sí, contamos con servicio a domicilio dentro del área metropolitana.</p>
-      <p><strong>¿Venden productos con garantía?</strong><br>Sí, todos nuestros productos incluyen garantía oficial.</p>
-    </div>
-  </section>
+<section id="ventas">
+  <h2>Ventas Informáticas</h2>
+  <ul>
+    <li><strong>Laptop HP 15"</strong> - Gs. 2.500.000</li>
+    <li><strong>Mouse gamer Redragon</strong> - Gs. 150.000</li>
+    <li><strong>Monitor LG 24"</strong> - Gs. 1.100.000</li>
+  </ul>
+  <p>Para comprar, contáctanos directamente.</p>
+</section>
 
-  <section id="testimonios">
-    <h2>Testimonios</h2>
-    <div class="testimonials">
-      <p>“Excelente atención, me repararon la notebook en el día. ¡Recomendado!” – Juan P.</p>
-      <p>“Compré una computadora y funciona perfecto. Gracias por la ayuda.” – María R.</p>
-    </div>
-  </section>
+<section id="faq">
+  <h2>Preguntas Frecuentes</h2>
+  <p><strong>¿Hacen servicio a domicilio?</strong> Sí, en Asunción y Gran Asunción.</p>
+  <p><strong>¿Puedo pagar con tarjeta?</strong> Sí, aceptamos tarjetas y pagos vía QR.</p>
+</section>
 
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <p>Tel: (0981) 123-456<br>Email: contacto@tecnoasistencia.com<br>Dirección: Av. Informática 123, Asunción, Paraguay</p>
-    <form>
-      <input type="text" placeholder="Nombre" required>
-      <input type="email" placeholder="Correo electrónico" required>
-      <textarea placeholder="Escriba su mensaje" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
-</div>
+<section id="testimonios">
+  <h2>Testimonios</h2>
+  <p>"Excelente servicio, me repararon la PC en 1 día." – <em>Carlos M.</em></p>
+  <p>"Muy confiables. Compré un monitor y llegó todo perfecto." – <em>Lucía R.</em></p>
+</section>
+
+<section id="contacto">
+  <h2>Contacto</h2>
+  <p>📞 Teléfono: +595 981 123456</p>
+  <p>📧 Email: contacto@tecnoasistencia.com</p>
+  <form>
+    <label>Tu nombre:</label><br>
+    <input type="text" name="nombre"><br>
+    <label>Tu mensaje:</label><br>
+    <textarea name="mensaje" rows="4"></textarea><br>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
 
 <footer>
   <p>&copy; 2025 TecnoAsistencia</p>
   <p>
-    <i class="fab fa-facebook"></i>
-    <i class="fab fa-instagram"></i>
-    <i class="fab fa-whatsapp"></i>
+    <a href="https://facebook.com" style="color:white">Facebook</a> |
+    <a href="https://instagram.com" style="color:white">Instagram</a>
   </p>
 </footer>
 
